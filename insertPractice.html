@@ -11,7 +11,6 @@
         <h4>I don't want this</h4>
     </div>
 </div>
-
 <script>
     const content = document.querySelector('.content');
     //Replace contents of an html tag using innerHTML
@@ -22,9 +21,14 @@
     zelda.innerHTML = 'I love Zelda';
     content.appendChild(zelda);
 
-    const ? = document.createElement('h1');
-    zelda.innerHTML = '?';
-    content.appendChild(?);
+    const Icecream = document.createElement('h1');
+    zelda.innerHTML = 'Icecream is the best';
+    content.appendChild(Icecream);
+
+    //put this at the top in addition to existing elements
+    const food = document.createElement('h1')
+    food.innerHTML = 'I love Pizza';
+    content.insertAdjacentElement('afterbegin', food);
 </script>
 </body>
 </html>
